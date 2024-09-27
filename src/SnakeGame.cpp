@@ -1,4 +1,4 @@
-#include "SnakeGame.h"
+#include "../inc/SnakeGame.h"
 #include <conio.h>
 
 using namespace std::chrono_literals;

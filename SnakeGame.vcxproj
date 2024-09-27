@@ -127,20 +127,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Graph.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Snake.cpp" />
-    <ClCompile Include="SnakeGame.cpp" />
+    <ClCompile Include="src\Graph.cpp" />
+    <ClCompile Include="src\Snake.cpp" />
+    <ClCompile Include="src\SnakeGame.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="defines.h" />
-    <ClInclude Include="Graph.h" />
     <ClInclude Include="inc\defines.h" />
     <ClInclude Include="inc\Graph.h" />
     <ClInclude Include="inc\Snake.h" />
     <ClInclude Include="inc\SnakeGame.h" />
-    <ClInclude Include="Snake.h" />
-    <ClInclude Include="SnakeGame.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
