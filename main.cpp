@@ -1,5 +1,5 @@
 #include <iostream>
-#include "SnakeGame.h"
+#include "inc/SnakeGame.h"
 
 int main(int argc, char* argv[])
 {
