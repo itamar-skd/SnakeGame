@@ -1,7 +1,6 @@
-﻿#include "inc/Graph.h"
+﻿#include "Graph.h"
 #include <iostream>
 #include <cstdlib>
-#include <string>
 
 Graph::Graph(uint32_t graphLength)
 	: __graphLength(graphLength)
@@ -42,41 +41,37 @@ void Graph::snakeAppleOverlay(uint8_t x, uint8_t y)
 void Graph::printGraph()
 {
 	system("cls");
-	
-	std::string graphStr;
-
-	for (size_t i{ 0 }; i <= __graphLength; i++)
-	{
-		graphStr += "--";
-	}
-	graphStr += '\n';
 
 	for (size_t i{ 0 }; i < __graphLength; i++)
 	{
-		graphStr += "| ";
+		std::cout << "--";
+	}
+	std::cout << std::endl;
+
+	for (size_t i{ 0 }; i < __graphLength; i++)
+	{
+		std::cout << "| ";
 		for (size_t j{ 0 }; j < __graphLength; j++)
 		{
 			if (this->__apple->x() == j && this->__apple->y() == i)
 			{
-				graphStr += "* ";
+				std::cout << "* ";
 				continue;
 			}
 
 			if (this->__snake.hasTailAt(j, i))
-				graphStr += (char)254u + std::string(" ");
+				std::cout << (char)254u << std::string(" ");
 			else
-				graphStr += "  ";
+				std::cout << "  ";
 		}
 
-		graphStr += "|\n";
+		std::cout << "|" << std::endl;
 	}
 	
-	for (size_t i{ 0 }; i <= __graphLength; i++)
+	for (size_t i{ 0 }; i < __graphLength; i++)
 	{
-		graphStr += "--";
+		std::cout << "--";
 	}
-
-	std::cout << graphStr;
 }
 
 uint8_t Graph::snakeSize()

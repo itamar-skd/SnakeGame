@@ -135,6 +135,10 @@
   <ItemGroup>
     <ClInclude Include="defines.h" />
     <ClInclude Include="Graph.h" />
+    <ClInclude Include="inc\defines.h" />
+    <ClInclude Include="inc\Graph.h" />
+    <ClInclude Include="inc\Snake.h" />
+    <ClInclude Include="inc\SnakeGame.h" />
     <ClInclude Include="Snake.h" />
     <ClInclude Include="SnakeGame.h" />
   </ItemGroup>
